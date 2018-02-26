@@ -21,6 +21,8 @@ app.get('/hoge/', (req, res) => {
   res.send('hoge hoge')
 })
 
-app.listen(8000, () => {
-  console.log('App listening on port 8000.')
+var server = app.listen(8000, () => {
+  var host = server.address().address
+  var port = server.address().port
+  console.log('listening at http://%s:%s', host, port)
 })
