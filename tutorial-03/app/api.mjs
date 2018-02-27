@@ -113,7 +113,7 @@ app.post('/todos', (req, res) => {
     console.log('.complete', 400)
     return
   }
-  dodo.complete = body.complete === 'true'
+  todo.complete = body.complete === 'true'
   getTodoList().then((json) => {
     json.todos.push(todo)
     return writeJSON(json)

@@ -9,33 +9,6 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="app">
-    <v-app>
-      <h1 v-text="title" class="display-3"></h1>
-      <v-list>
-        <div v-for="(item, index) in items" v-if="!item.complete">
-          <div class="">
-            {{item.text}}
-            <v-btn>delete</v-btn>
-          </div>
-        </div>
-      </v-list>
-    </v-app>
-  </div>
-
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
-  <script>
-    const app = new Vue({
-      el: '#app',
-      data: {
-        title: 'TODO LIST',
-        items: [
-          { id: 'xxx',text: 'do it', complete: false },
-          { id: 'xxxzz',text: 'do that', complete: false },
-        ],
-      }
-    })
-  </script>
+  <div id="app"></div>
 </body>
 </html>
