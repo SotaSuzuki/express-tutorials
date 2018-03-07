@@ -13,7 +13,10 @@ app.get('/expressions', (req, res, next) => {
 })
 
 app.get('/expressions/:id', (req, res, next) => {
-  console.log(req.params)
+  if (isNaN(Number(req.params.id))) {
+    res.status(404).send('not found')
+    return
+  }
   res.send('Oh! it is dynamic!')
 })
 
