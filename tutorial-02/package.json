@@ -3,12 +3,12 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-      "start": "node app.js",
-      "dev:watch": "nodemon --watch app.js --watch routes --exec \"npm start\""
+        "start": "node app.js",
+        "dev:watch": "nodemon --watch app.js --watch routes --exec \"npm start\""
     },
     "dependencies": {
-        "express": "2.5.11",
-        "ejs": ">= 0.0.1"
+        "ejs": ">= 0.0.1",
+        "express": "2.5.11"
     },
     "devDependencies": {
         "nodemon": "^1.15.1"
